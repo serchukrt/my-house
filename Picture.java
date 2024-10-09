@@ -57,7 +57,7 @@ public class Picture
         campo.changeSize(600);
         campo.moveHorizontal(-340);
         campo.moveVertical(140);
-
+        
         sun = new Circle();
         sun.changeColor("yellow");
         sun.makeVisible();
@@ -72,11 +72,26 @@ public class Picture
         moon.changeSize(40);
         moon.makeVisible();
         moon.changeColor("magenta");
-        moon.slowMoveVertical(-200);
+        moon.slowMoveVertical(-220);
+        
         
                
     }
-
+    
+    public void amanecer()
+    {
+        moon.makeInvisible();
+        
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(220);
+        sun.changeSize(80);
+        sun.makeVisible();
+        sun.slowMoveVertical(-220);
+        
+    }
+    
     /**
      * Change this picture to black/white display
      */
